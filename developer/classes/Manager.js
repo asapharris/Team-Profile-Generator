@@ -1,13 +1,15 @@
-class Manager {
-    constructor(name, id, email, officeNumber) {
-      this.name = name;
-      this.id = id;
-      this.officeNumber = officeNumber;
-      this.email = email;
+const Employee = require('./Employee');
+
+class Manager extends Employee {
+    constructor (name, id, email, officeNumber) {
+        super (name, id, email);
+        this.officeNumber = officeNumber; 
     }
+
+    getRole () {
+        return "Manager";
+    }
+}
+
+module.exports = Manager;
   
-    printInfo() {
-      console.log(`The manager's name is ${this.name}, to reach him call ${this.officeNumber} or email ${this.email}.`);
-    }
-  }
-  module.exports = Manager;

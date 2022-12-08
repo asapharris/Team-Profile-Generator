@@ -59,7 +59,8 @@ function generateManagerCard(data) {
 }
 
 function generateInternCard(data) {
-    return `
+    if (intern === true) {
+        return `
     <div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
@@ -69,10 +70,12 @@ function generateInternCard(data) {
   </div>
 </div>
     `
+    }
 }
 
 function generateEngineerCard(data) {
-    return `
+    if (engineer === true) {
+        return `
     <div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
@@ -82,6 +85,7 @@ function generateEngineerCard(data) {
   </div>
 </div>
     `
+    }
 }
 
 

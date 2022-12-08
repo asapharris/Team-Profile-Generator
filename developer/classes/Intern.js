@@ -1,13 +1,18 @@
-const Manager = require('../Manager');
+const Employee = require('./Employee');
 
-class Intern extends Manager {
-    constructor(name, id, email, github) {
-        this.name = name;
-        this.id = id;
-        this.github = github;
-        this.email = email;
+class Intern extends Employee {
+    constructor (name, id, email, school) {
+        super (name, id, email);
+        this.school = school; 
+    }
+
+    getSchool () {
+        return this.school
+    }
+
+    getRole () {
+        return "Intern";
     }
 }
 
-const Intern = new Intern();
-Intern.printInfo();
+module.exports = Intern;
