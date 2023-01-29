@@ -1,6 +1,8 @@
 # Team Profile Generator  ![Project License Badge](https://img.shields.io/badge/license-ISC-brightgreen)
 # asapharris's project
 
+[Untitled_ Jan 29, 2023 12_06 PM.webm](https://user-images.githubusercontent.com/116297281/215343306-fe0d7d63-254f-4984-a7e4-abd1cafc93a7.webm) 
+
 ## Description
 This project generates a Company's team profile when asked a series of questions via prompt
 
